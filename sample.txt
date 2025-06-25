@@ -1,0 +1,29 @@
+Connection String: jdbc:mysql://localhost:3306/mydatabase?user=myuser&password=mypassword
+Service name - mysql
+Ip Address -
+Port Number - 3306
+username - serious
+password - ""
+databse_name - mydatabase
+
+
+# NOTES #
+
+- fast api is framework
+- uvicorn is a server
+- pymysql is a library to connect to mysql database
+- dotenv is used to load environment variables from a .env file
+
+#empdb
+
+emp(eid number primary key, ename varchar(20))
+
+class Emp:
+    def __init__(eid, ename):
+        self.eid = eid
+        self.ename = ename
+
+    def __repr__(self):
+        return f"Emp(eid={self.eid}, ename='{self.ename}')"
+
+        
